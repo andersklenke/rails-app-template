@@ -1,0 +1,39 @@
+AllCops:
+  RunRailsCops: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - "bin/*"
+    - config.ru
+    - config/boot.rb
+    - config/environment.rb
+    - config/initializers/version.rb
+    - config/initializers/simple_form.rb
+    - config/initializers/simple_form_bootstrap.rb
+    - db/schema.rb
+    - Gemfile
+    - Guardfile
+    - Rakefile
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"
+    - "spec/spec_helper.rb"
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrivialAccessors:
+  AllowPredicates: true

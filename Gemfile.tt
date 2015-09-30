@@ -1,0 +1,31 @@
+source 'https://rubygems.org'
+
+gem 'rails'
+gem 'pg'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+gem 'puma'
+
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'simple_form'
+
+group :development, :test do
+  gem 'dotenv-rails'
+  gem 'byebug'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'ffaker'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'guard-rspec', require: false
+end

@@ -1,0 +1,1 @@
+template "spec/rails_helper.rb.tt", :force => true
